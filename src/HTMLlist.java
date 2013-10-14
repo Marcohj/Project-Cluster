@@ -1,9 +1,13 @@
 class HTMLlist {
-    String str;
-    HTMLlist next;
+	String		str;
+	HTMLlist	next;
 
-    HTMLlist (String s, HTMLlist n) {
-        str = s;
-        next = n;
-    }
+	HTMLlist(String s, HTMLlist n) {
+		str = s;
+		next = n;
+	}
+}
+
+class URL {
+	
 }
