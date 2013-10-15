@@ -12,8 +12,9 @@ public class SearchCmd {
 		// }
 
 		// Read the file and create the linked list
-		// Read the file and create the linked list
-		HTMLlist l = Searcher.readHtmlList("files/itcwww-small.txt");
+		//HTMLlist l = Searcher.readHtmlList("files/itcwww-small.txt");
+		
+		HTMLlist[] wordList = Searcher.buildHtmlList("files/itcwww-small.txt");
 		// HTMLlist l = Searcher.readHtmlList(args[0]);
 
 		// Ask for a word to search
@@ -36,7 +37,7 @@ public class SearchCmd {
 			if (name == null || name.length() == 0) {
 				quit = true;
 			} else {
-				String[] results = Searcher.exists(l, name);
+				String[] results = Searcher.exists2(wordList, name);
 				for (String foundIn : results) {
 					if (foundIn != null) {
 						System.out.println("The word \"" + name + "\" was found on: " + foundIn);
