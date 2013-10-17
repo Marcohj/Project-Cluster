@@ -68,63 +68,66 @@ class Searcher {
 		return existInPage;
 	}
 
-	public static String[] exists2(HTMLlist[] wordlist, String searchWord) {
+	public static String[] exists2(HTMLlist wordlist, String searchWord) {
 		String[] URLS = new String[5000];
 		int URLcounter = 0;
 
-		for (HTMLlist word : wordlist) {
-			if(word != null) {
-				if (word.str.equals(searchWord)) {
-					for (URL url : word.urls) {
-						if (url != null) {
-							URLS[URLcounter] = url.str;
-							URLcounter++;
-						}
-					}
-				}	
+		while(wordlist != null) {
+			if(wordlist.str.equals(searchWord)) {
+				while(wordlist.urls != null) {
+					URLS[URLcounter] = wordlist.urls.str;
+					URLcounter++;
+					wordlist.urls = wordlist.urls.next;
+				}
+				wordlist = null;
 			}
+			wordlist = wordlist.next;
 		}
 
 		return URLS;
 
 	}
 
-	public static HTMLlist[] buildHtmlList(String filename) throws IOException {
+	public static HTMLlist buildHtmlList(String filename) throws IOException {
 		String linetxt;
 		String lastURL = "";
-		HTMLlist[] words = new HTMLlist[2000];
-		HTMLlist temp;
-		int wordCounter = 0;
+		HTMLlist temp, current, start = null;
 		boolean alreadyExists = false;
+		boolean isStart = true;
 
 		BufferedReader infile = new BufferedReader(new FileReader(filename));
 		linetxt = infile.readLine(); // Read the first line
+
 		while (linetxt != null) { // Exit if there is none
 			if (linetxt.substring(0, 1).equals("*")) {
 				lastURL = linetxt;
 			} else {
+				// Check if word already exists
 				alreadyExists = false;
-				for(int i = 0; i < words.length; i++) {
-					if(words[i] != null) {
-						if(words[i].str.equals(linetxt)) {
-							words[i].addURL(lastURL);
-							alreadyExists = true;
-						}
+				while (start != null) {
+					if (start.str.equals(linetxt)) {
+						start.addURL(lastURL);
+						alreadyExists = true;
 					}
+					start = start.next;
 				}
-				
-				if(!alreadyExists) {
+
+				// Add to LinkedList if it dosen't already exist
+				if (isStart && !alreadyExists) {
+					start = new HTMLlist(linetxt, null);
+					current = start;
+				} else if (!alreadyExists) {
 					temp = new HTMLlist(linetxt, null);
 					temp.addURL(lastURL);
-					words[wordCounter] = temp;
-					wordCounter++;
+					current.next = temp;
+					current = temp;
 				}
 			}
 			linetxt = infile.readLine(); // Read the next line
 		}
 		infile.close(); // Close the file
 
-		return words;
+		return start;
 	}
 
 	public static HTMLlist readHtmlList(String filename) throws IOException {

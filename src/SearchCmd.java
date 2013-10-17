@@ -14,7 +14,7 @@ public class SearchCmd {
 		// Read the file and create the linked list
 		//HTMLlist l = Searcher.readHtmlList("files/itcwww-small.txt");
 		
-		HTMLlist[] wordList = Searcher.buildHtmlList("files/itcwww-small.txt");
+		HTMLlist wordList = Searcher.buildHtmlList("files/itcwww-small.txt");
 		// HTMLlist l = Searcher.readHtmlList(args[0]);
 
 		// Ask for a word to search
