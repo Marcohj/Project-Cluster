@@ -1,11 +1,6 @@
-/* SearchCmd.java
-   Written by Rune Hansen
-   Updated by Alexandre Buisse <abui@itu.dk>
- */
-
 import java.io.*;
 
-class Searcher {
+public class Step2 {
 	
 	// Array size
 	final static int ARRAYSIZE = 5;
@@ -70,84 +65,6 @@ class Searcher {
 		return existInPage;
 	}
 	
-	// Step 3
-	public static String[] exists2(HTMLlist wordlist, String searchWord) {
-		String[] URLS = new String[ARRAYSIZE];
-		int URLcounter = 0;
-		String[] tempArray = new String[0];
-		int tempArraySize = 0;
-
-		while(wordlist != null) {
-			
-			if (URLcounter == URLS.length) {
-				tempArray = URLS;
-				tempArraySize = tempArray.length + ARRAYSIZE;
-				URLS = new String[tempArraySize];
-				for (int i = 0; i < tempArray.length; i++) {
-					URLS[i] = tempArray[i];
-				}
-			}
-			
-			if(wordlist.str.equalsIgnoreCase(searchWord)) {
-				while(wordlist.urls != null) {
-					URLS[URLcounter] = wordlist.urls.str;
-					URLcounter++;
-					wordlist.urls = wordlist.urls.next;
-				}
-				wordlist.next = null;
-			}
-			wordlist = wordlist.next;
-		}
-
-		return URLS;
-	}
-	
-	// Step 3
-	public static HTMLlist buildHtmlList(String filename) throws IOException {
-		String linetxt;
-		String lastURL = "";
-		HTMLlist temp, current, start = new HTMLlist(null, null);
-		current = null;
-		boolean alreadyExists = false;
-		boolean isStart = true;
-
-		BufferedReader infile = new BufferedReader(new FileReader(filename));
-		linetxt = infile.readLine(); // Read the first line
-
-		while (linetxt != null) { // Exit if there is none
-			if (linetxt.substring(0, 1).equals("*")) {
-				lastURL = linetxt;
-			} else if(isStart) {
-				start = new HTMLlist(linetxt, null);
-				current = start;
-				isStart = false;
-			} else {
-				// Check if word already exists
-				alreadyExists = false;
-				HTMLlist searcher = start;
-				while (searcher != null) {
-					if (searcher.str.equals(linetxt)) {
-						searcher.addURL(lastURL);
-						alreadyExists = true;
-					}
-					searcher = searcher.next;
-				}
-
-				// Add to LinkedList if it dosen't already exist
-				if (!alreadyExists) {
-					temp = new HTMLlist(linetxt, null);
-					temp.addURL(lastURL);
-					current.next = temp;
-					current = temp;
-				}
-			}
-			linetxt = infile.readLine(); // Read the next line
-		}
-		infile.close(); // Close the file
-
-		return start;
-	}
-	
 	// Step 2
 	public static HTMLlist readHtmlList(String filename) throws IOException {
 		String name;
@@ -170,5 +87,32 @@ class Searcher {
 
 		return start;
 	}
+	
+	public static void main(String[] args) throws IOException {
+		String name;
 
+		// Read the file and create the linked list
+		HTMLlist l = Step2.readHtmlList("files/itcwww-small.txt");
+
+		// Ask for a word to search
+		BufferedReader inuser = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.println("Hit return to exit.");
+		boolean quit = false;
+		while (!quit) {
+			System.out.print("Search for: ");
+			name = inuser.readLine(); // Read a line from the terminal
+
+			if (name == null || name.length() == 0) {
+				quit = true;
+			} else {
+				String[] results = Step2.exists(l, name);
+				for (String foundIn : results) {
+					if (foundIn != null) {
+						System.out.println("The word \"" + name + "\" was found on: " + foundIn);
+					}
+				}
+			}
+		}
+	}
 }
