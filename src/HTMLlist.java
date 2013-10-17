@@ -1,7 +1,7 @@
 class HTMLlist {
 	String		str;
 	HTMLlist	next;
-	URL			urls;
+	URL			urls, current;
 
 	HTMLlist(String s, HTMLlist n) {
 		str = s;
@@ -11,18 +11,25 @@ class HTMLlist {
 	public void addURL(String url) {
 		boolean urlExist = false;
 		
-		while (urls != null) {
-			if(urls.str.equals(url)) {
+		URL urlSearcher = urls;
+		while (urlSearcher != null) {
+			if(urlSearcher.str.equals(url)) {
 				urlExist = true;
 			}
-			urls = urls.next;
+			urlSearcher = urlSearcher.next;
 		}
 		
-		if(!urlExist) {
-			URL theURL = new URL();
-			theURL.str = url;
-			urls.next = theURL;
-			urls = theURL;
+		if(!urlExist) {			
+			if(current == null) {
+				urls = new URL();
+				urls.str = url;
+				current = urls;
+			} else {
+				URL theURL = new URL();
+				theURL.str = url;
+				current.next = theURL;
+				current = theURL;	
+			}
 		}
 	}
 }

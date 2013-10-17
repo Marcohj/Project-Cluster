@@ -7,11 +7,12 @@ import java.io.*;
 
 class Searcher {
 	
+	// Array size
+	final static int ARRAYSIZE = 5;
+	
 	// Step 2
 	public static String[] exists(HTMLlist l, String word) {
-		// Array size
-		final int ARRAYSIZE = 5;
-
+		
 		// temp variables
 		String[] tempArray = new String[0];
 		int tempArraySize = 0;
@@ -71,17 +72,29 @@ class Searcher {
 	
 	// Step 3
 	public static String[] exists2(HTMLlist wordlist, String searchWord) {
-		String[] URLS = new String[5000];
+		String[] URLS = new String[ARRAYSIZE];
 		int URLcounter = 0;
+		String[] tempArray = new String[0];
+		int tempArraySize = 0;
 
 		while(wordlist != null) {
-			if(wordlist.str.equals(searchWord)) {
+			
+			if (URLcounter == URLS.length) {
+				tempArray = URLS;
+				tempArraySize = tempArray.length + ARRAYSIZE;
+				URLS = new String[tempArraySize];
+				for (int i = 0; i < tempArray.length; i++) {
+					URLS[i] = tempArray[i];
+				}
+			}
+			
+			if(wordlist.str.equalsIgnoreCase(searchWord)) {
 				while(wordlist.urls != null) {
 					URLS[URLcounter] = wordlist.urls.str;
 					URLcounter++;
 					wordlist.urls = wordlist.urls.next;
 				}
-				wordlist = null;
+				wordlist.next = null;
 			}
 			wordlist = wordlist.next;
 		}
@@ -94,6 +107,7 @@ class Searcher {
 		String linetxt;
 		String lastURL = "";
 		HTMLlist temp, current, start = new HTMLlist(null, null);
+		current = null;
 		boolean alreadyExists = false;
 		boolean isStart = true;
 
@@ -110,12 +124,13 @@ class Searcher {
 			} else {
 				// Check if word already exists
 				alreadyExists = false;
-				while (start != null) {
-					if (start.str.equals(linetxt)) {
-						start.addURL(lastURL);
+				HTMLlist searcher = start;
+				while (searcher != null) {
+					if (searcher.str.equals(linetxt)) {
+						searcher.addURL(lastURL);
 						alreadyExists = true;
 					}
-					start = start.next;
+					searcher = searcher.next;
 				}
 
 				// Add to LinkedList if it dosen't already exist
