@@ -6,7 +6,8 @@
 import java.io.*;
 
 class Searcher {
-
+	
+	// Step 2
 	public static String[] exists(HTMLlist l, String word) {
 		// Array size
 		final int ARRAYSIZE = 5;
@@ -67,7 +68,8 @@ class Searcher {
 		}
 		return existInPage;
 	}
-
+	
+	// Step 3
 	public static String[] exists2(HTMLlist wordlist, String searchWord) {
 		String[] URLS = new String[5000];
 		int URLcounter = 0;
@@ -85,13 +87,13 @@ class Searcher {
 		}
 
 		return URLS;
-
 	}
-
+	
+	// Step 3
 	public static HTMLlist buildHtmlList(String filename) throws IOException {
 		String linetxt;
 		String lastURL = "";
-		HTMLlist temp, current, start = null;
+		HTMLlist temp, current, start = new HTMLlist(null, null);
 		boolean alreadyExists = false;
 		boolean isStart = true;
 
@@ -101,6 +103,10 @@ class Searcher {
 		while (linetxt != null) { // Exit if there is none
 			if (linetxt.substring(0, 1).equals("*")) {
 				lastURL = linetxt;
+			} else if(isStart) {
+				start = new HTMLlist(linetxt, null);
+				current = start;
+				isStart = false;
 			} else {
 				// Check if word already exists
 				alreadyExists = false;
@@ -113,10 +119,7 @@ class Searcher {
 				}
 
 				// Add to LinkedList if it dosen't already exist
-				if (isStart && !alreadyExists) {
-					start = new HTMLlist(linetxt, null);
-					current = start;
-				} else if (!alreadyExists) {
+				if (!alreadyExists) {
 					temp = new HTMLlist(linetxt, null);
 					temp.addURL(lastURL);
 					current.next = temp;
@@ -129,7 +132,8 @@ class Searcher {
 
 		return start;
 	}
-
+	
+	// Step 2
 	public static HTMLlist readHtmlList(String filename) throws IOException {
 		String name;
 		HTMLlist start, current, tmp;
