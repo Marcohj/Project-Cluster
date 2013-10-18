@@ -1,4 +1,5 @@
 class HTMLlist {
+	int			hash;
 	String		str;
 	HTMLlist	next;
 	URL			urls, current;
@@ -6,6 +7,7 @@ class HTMLlist {
 	HTMLlist(String s, HTMLlist n) {
 		str = s;
 		next = n;
+		hash = s.toLowerCase().hashCode();
 	}
 	
 	public void addURL(String url) {
