@@ -3,7 +3,7 @@ import java.io.*;
 public class Step2 {
 	
 	// Array size
-	final static int ARRAYSIZE = 5;
+	final static int ARRAYSIZE = 500;
 	
 	// Step 2
 	public static String[] exists(HTMLlist l, String word) {
@@ -91,9 +91,14 @@ public class Step2 {
 	public static void main(String[] args) throws IOException {
 		String name;
 
+		long startTimer = System.currentTimeMillis();
+		
 		// Read the file and create the linked list
 		HTMLlist l = Step2.readHtmlList("files/itcwww-small.txt");
 
+		long stopTimer = System.currentTimeMillis();
+		System.out.println("Timer: " + (stopTimer - startTimer));
+		
 		// Ask for a word to search
 		BufferedReader inuser = new BufferedReader(new InputStreamReader(System.in));
 
