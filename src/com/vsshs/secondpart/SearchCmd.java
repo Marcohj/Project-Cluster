@@ -22,7 +22,7 @@ class Searcher
 	{
 		String url = null;
 		boolean found = false;
-		ArrayList<String> printed = new ArrayList<String>();
+		String printed = "";
 		while (l != null)
 		{
 			if (l.str.startsWith("*"))
@@ -35,7 +35,7 @@ class Searcher
 				if (!printed.contains(url))
 				{
 					System.out.println("URL: " + url);
-					printed.add(url);
+					printed+=url;
 				}
 				found = true;
 			}
