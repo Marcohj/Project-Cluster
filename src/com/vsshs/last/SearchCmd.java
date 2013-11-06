@@ -7,20 +7,29 @@ class HashTable
 	String word = null;
 	Url urls;
 
+	/**
+	 * Adds a new unique url to a word.
+	 * @param url to add
+	 * @return object that has been added or found during the search
+	 */
 	public Url AddUrl(String url)
 	{
+		
+		// if no url's are presend - create new one.
 		if (urls == null)
 		{
 			urls = new Url(url, null);
 			return urls;
 		}
+		
+		//traverse list of urls and try to find a mach
 		Url current = urls;
 		while (current != null)
 		{
 			// check if not added already
 			if (current.url.compareTo(url) == 0) return current;
 
-			// not found while traversing
+			// not found while traversing - add a new one to the end.
 			if (current.next == null)
 			{
 				current.next = new Url(url, null);
@@ -33,43 +42,7 @@ class HashTable
 	}
 }
 
-class HTMLlist
-{
-	String str;
-	HTMLlist next;
-	Url urls;
 
-	HTMLlist(String s, HTMLlist n)
-	{
-		str = s;
-		next = n;
-	}
-
-	public Url AddUrl(String url)
-	{
-		if (urls == null)
-		{
-			urls = new Url(url, null);
-			return urls;
-		}
-		Url current = urls;
-		while (current != null)
-		{
-			// check if not added already
-			if (current.url.compareTo(url) == 0) return current;
-
-			// not found while traversing
-			if (current.next == null)
-			{
-				current.next = new Url(url, null);
-				return current.next;
-			}
-			current = current.next;
-		}
-
-		return null;
-	}
-}
 
 class Url
 {
@@ -126,23 +99,7 @@ class Searcher
 			}
 			obj = l[++nextPos];
 		}
-/*
-		while (l != null)
-		{
-			if (l.str.compareTo(word) == 0)
-			{
-				found = true;
-				Url u = l.urls;
-				while (u != null)
-				{
-					System.out.println("     -> " + u.url.substring(6));
-					u = u.next;
-				}
-			}
 
-			l = l.next;
-		}
-		*/
 		return found;
 	}
 
@@ -154,8 +111,6 @@ class Searcher
 
 		// Open the file given as argument
 		BufferedReader infile = new BufferedReader(new FileReader(filename));
-
-		// currentUrl = infile.readLine(); // Read the first line
 
 		while (true)// Exit if there is none
 		{
@@ -172,9 +127,14 @@ class Searcher
 				continue;
 			}
 
+			// calculate hash for the string
 			int hash = getHash(name);
 
+			
+			// find the object at the position of the hash value.
 			HashTable obj = hashTable[hash];
+			
+			// no object there means that cell is empty and the new obj can be created.
 			if (obj == null)
 			{
 				obj = hashTable[hash] = new HashTable();
@@ -191,8 +151,10 @@ class Searcher
 				continue;
 			}
 			
-	
-			
+			// if we got up to here it means that the spot was taken. 
+			// find a new empty spot in the list and add the word.
+			// This means that the word is going to be "kinda" close to
+			// where it's hash value is.
 			int nextPos = hash;
 			while (true)
 			{
@@ -254,18 +216,7 @@ public class SearchCmd
 				System.out.println(i+ " --> " + l[i].word);
 			}
 		}
-		// HTMLlist tmp = l;
-		// while (tmp != null)
-		// {
-		// System.out.println(tmp.str);
-		// Url u = tmp.urls;
-		// while (u != null)
-		// {
-		// System.out.println("     -> " + u.url);
-		// u = u.next;
-		// }
-		// tmp = tmp.next;
-		// }
+
 		// Ask for a word to search
 		BufferedReader inuser = new BufferedReader(new InputStreamReader(System.in));
 
