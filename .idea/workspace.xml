@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/Task1/SearcherTest.java" line="12" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" name="Default" comment="All thasks">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/HTMLlist.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Advanced/HashTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/Hashtable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Julian.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task1/SearchCmd.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task1/SearchCmdTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task4/SearchCmd_4_Vaidas.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Advanced/SearchCmd_Advanced.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task2/SearchCmd_task2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task3/SearchCmd_task3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task4/SearchCmd_task4.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task1/Searcher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Advanced/SearcherAdv.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Advanced/SearcherAdvTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task1/SearcherTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task2/Searcher_task2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task2/Searcher_task2Test.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task3/Searcher_task3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task3/Searcher_task3Test.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task4/Searcher_task4.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task4/Searcher_task4Test.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/URL.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Advanced/Url.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/h2_1_3_174.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/junit_benchmarks_0_7_0.xml" />
+      <change type="DELETED" beforePath="D:\Workspace\Project-Cluster\src\HTMLlist.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Workspace\Project-Cluster\src\SearchCmd.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Workspace\Project-Cluster\src\Searcher.java" afterPath="" />
+    </list>
+    <ignored path="Project Cluster.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1384959366998" ignored="false" />
+    <file path="/fragment.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1384875501004" ignored="false" />
+    <file path="/SearchCmd.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1381768977979" ignored="false" />
+    <file path="/Searcher.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1381768733275" ignored="false" />
+    <file path="/HTMLURLList.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1381838209511" ignored="false" />
+    <file path="/URL_list.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1381757438754" ignored="false" />
+    <file path="/HTMLURL_list.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1381833237280" ignored="false" />
+    <file path="/SearchCmd_task2.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1381833588569" ignored="false" />
+    <file path="/Searcher_task3.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1384699309511" ignored="false" />
+    <file path="/HTMLlist.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1383731126637" ignored="false" />
+    <file path="/HTMLIterable.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1381836887214" ignored="false" />
+    <file path="/HTMLlistIterator.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1381836956769" ignored="false" />
+    <file path="$PROJECT_DIR$/src/HTMLlistIterator.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1381836962598" ignored="false" />
+    <file path="$PROJECT_DIR$/src/HTMLlistIteratorImpl.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1381837276880" ignored="false" />
+    <file path="/SearchCmd_task3.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1383245590440" ignored="false" />
+    <file path="/URLlist.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1382453016875" ignored="false" />
+    <file path="$PROJECT_DIR$/../TaskManagerJGroupEclipseProject/src/dk/itu/smds/e2013/jgroups/TaskManagerJGroupApp.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1382360156073" ignored="false" />
+    <file path="/TaskManagerJGroupApp.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1382359922490" ignored="false" />
+    <file path="$PROJECT_DIR$/../TaskManagerJGroupEclipseProject/src/dk/itu/smds/e2013/jgroups/PrintJavaExtensionFolder.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1382360156073" ignored="false" />
+    <file path="$PROJECT_DIR$/../TaskManagerJGroupEclipseProject/src/dk/itu/smds/e2013/jgroups/common/ChannelHelper.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1382360161415" ignored="false" />
+    <file path="$PROJECT_DIR$/../TaskManagerJGroupEclipseProject/src/dk/itu/smds/e2013/jgroups/common/TaskProvider.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1382360156074" ignored="false" />
+    <file path="$PROJECT_DIR$/../TaskManagerJGroupEclipseProject/src/dk/itu/smds/e2013/jgroups/TaskReceiver.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1382360156074" ignored="false" />
+    <file path="$PROJECT_DIR$/../TaskManagerJGroupEclipseProject/src/dk/itu/smds/e2013/serialization/common/TaskManager.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1382360179153" ignored="false" />
+    <file path="$PROJECT_DIR$/../TaskManagerJGroupEclipseProject/src/dk/itu/smds/e2013/serialization/common/TaskSerializer.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1382360180744" ignored="false" />
+    <file path="$PROJECT_DIR$/../TaskManagerJGroupEclipseProject/src/dk/itu/smds/e2013/serialization/common/User.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1382360179153" ignored="false" />
+    <file path="$PROJECT_DIR$/../TaskManagerJGroupEclipseProject/src/dk/itu/smds/e2013/serialization/common/Utilities.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1382360179153" ignored="false" />
+    <file path="$PROJECT_DIR$/../TaskManagerJGroupEclipseProject/src/dk/itu/smds/e2013/serialization/common/SerializationTester.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1382360179153" ignored="false" />
+    <file path="$PROJECT_DIR$/../TaskManagerJGroupEclipseProject/src/dk/itu/smds/e2013/serialization/common/Task.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1382360179153" ignored="false" />
+    <file path="$PROJECT_DIR$/../TaskManagerJGroupEclipseProject/src/dk/itu/smds/e2013/serialization/common/TaskList.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1382360179153" ignored="false" />
+    <file path="$PROJECT_DIR$/../TaskManagerJGroupEclipseProject/src/dk/itu/smds/e2013/serialization/common/Envelope.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1382360179154" ignored="false" />
+    <file path="$PROJECT_DIR$/../TaskManagerJGroupEclipseProject/src/resources/task-manager.xml" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1382361146894" ignored="false" />
+    <file path="/testfile.txt" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1383238991446" ignored="false" />
+    <file path="/Hashtable.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1383659122974" ignored="false" />
+    <file path="/lksjdf.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1383660146757" ignored="false" />
+    <file path="/SearchCmd_4_Vaidas.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1383759254752" ignored="false" />
+    <file path="/URL.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1383731197675" ignored="false" />
+    <file path="$PROJECT_DIR$/src/Task4/HashTable.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1383731273869" ignored="false" />
+    <file path="$PROJECT_DIR$/src/Task4/Hashtable.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1383731367521" ignored="false" />
+    <file path="/SearcherAdv.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1384349275655" ignored="false" />
+    <file path="/Url.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1383755827061" ignored="false" />
+    <file path="/SearchCmd_Advanced.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1384789637689" ignored="false" />
+    <file path="/SearcherTest.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1384628496034" ignored="false" />
+    <file path="/Searcher_task3Test.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1384699452487" ignored="false" />
+    <file path="/SearcherAdvTest.java" changelist="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" time="1384871575104" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Project Cluster$SearchCmd.coverage" NAME="SearchCmd Coverage Results" MODIFIED="1381740877713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="D:\Workspace\Project-Cluster" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
+  <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <exception_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Project Cluster" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Searcher_task3.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Task3/Searcher_task3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="50" selection-start="619" selection-end="619" vertical-scroll-proportion="0.036101084">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="n3urohazard" />
+        <option value="belea.simion@gmail.com" />
+      </list>
+    </option>
+    <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/Advanced/Url.java" />
+        <option value="$PROJECT_DIR$/src/Task1/Searcher.java" />
+        <option value="$PROJECT_DIR$/src/Task1/SearcherTest.groovy" />
+        <option value="$PROJECT_DIR$/src/Task1/SearchCmdTest.java" />
+        <option value="$PROJECT_DIR$/src/Task1/SearchCmd.java" />
+        <option value="$PROJECT_DIR$/src/Task3/Searcher_task3.java" />
+        <option value="$PROJECT_DIR$/src/Task4/Searcher_task4Test.java" />
+        <option value="$PROJECT_DIR$/src/Task4/Searcher_task4.java" />
+        <option value="$PROJECT_DIR$/src/Advanced/SearchCmd_Advanced.java" />
+        <option value="$PROJECT_DIR$/src/Advanced/SearcherAdv.java" />
+        <option value="$PROJECT_DIR$/src/Task1/SearcherTest.java" />
+        <option value="$PROJECT_DIR$/src/Advanced/SearcherAdvTest.java" />
+        <option value="$PROJECT_DIR$/src/Task3/Searcher_task3Test.java" />
+        <option value="$PROJECT_DIR$/src/Task2/Searcher_task2.java" />
+        <option value="$PROJECT_DIR$/src/Task3/SearchCmd_task3.java" />
+        <option value="$PROJECT_DIR$/src/Task2/Searcher_task2Test.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project Cluster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project Cluster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-Cluster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project Cluster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-Cluster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project Cluster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-Cluster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project Cluster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-Cluster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.lastSelected" value="preferences.intentionPowerPack" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../H2/bin/h2-1.3.174.jar!/" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.splitter.details.proportions" value="0.47779113" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Task2" />
+      <recent name="Advanced" />
+      <recent name="Task4" />
+      <recent name="Task3" />
+      <recent name="Task1" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="AbstractBenchmark" />
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\Project-Cluster\src\Advanced" />
+      <recent name="D:\Workspace\Project-Cluster\src" />
+      <recent name="D:\Workspace\Project-Cluster" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\Project-Cluster\src\common" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Task4" />
+      <recent name="Task3" />
+      <recent name="Task2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.Searcher_task2Test">
+    <configuration default="false" name="SearchCmd_Advanced" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Advanced.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Advanced.SearchCmd_Advanced" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Project Cluster" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SearcherAdvTest.testReadHtmlListSmall" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Advanced.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Project Cluster" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="Advanced" />
+      <option name="MAIN_CLASS_NAME" value="Advanced.SearcherAdvTest" />
+      <option name="METHOD_NAME" value="testReadHtmlListSmall" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SearcherAdvTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Advanced.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Project Cluster" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="Advanced" />
+      <option name="MAIN_CLASS_NAME" value="Advanced.SearcherAdvTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Searcher_task2Test.testReadHtmlListSmall" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Task2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Project Cluster" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="Task2" />
+      <option name="MAIN_CLASS_NAME" value="Task2.Searcher_task2Test" />
+      <option name="METHOD_NAME" value="testReadHtmlListSmall" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Searcher_task2Test" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Task2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Project Cluster" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="Task2" />
+      <option name="MAIN_CLASS_NAME" value="Task2.Searcher_task2Test" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Project Cluster" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="SearchCmd_task3_medium" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Task3.SearchCmd_task3" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="itcwww-big.txt" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/src/common" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Project Cluster" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SearchCmd_4_vaidas_Hashtable" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Task4.SearchCmd_4_Vaidas" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="itcwww-medium.txt" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/src" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Project Cluster" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="7">
+      <item index="0" class="java.lang.String" itemvalue="Application.SearchCmd_task3_medium" />
+      <item index="1" class="java.lang.String" itemvalue="Application.SearchCmd_4_vaidas_Hashtable" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SearchCmd_Advanced" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SearcherAdvTest.testReadHtmlListSmall" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SearcherAdvTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.Searcher_task2Test.testReadHtmlListSmall" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.Searcher_task2Test" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Searcher_task2Test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Searcher_task2Test.testReadHtmlListSmall" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SearcherAdvTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SearcherAdvTest.testReadHtmlListSmall" />
+        <item index="4" class="java.lang.String" itemvalue="Application.SearchCmd_Advanced" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a8e5fdd8-bcd2-48c1-8c34-e42a96f6dd40" name="Default" comment="" />
+      <created>1381330185589</created>
+      <updated>1381330185589</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32875144" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921347" sideWeight="0.7649123" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921347" sideWeight="0.7649123" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494382" sideWeight="0.7649123" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47376874" sideWeight="0.7079038" order="10" side_tool="false" content_ui="tabs" x="26" y="384" width="1868" height="555" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23482245" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921347" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921347" sideWeight="0.7649123" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982457" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32187858" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32875144" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494382" sideWeight="0.78350514" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28640258" sideWeight="0.67124856" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35280642" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32187858" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.674685" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39175257" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Move with Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32976446" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="All thasks" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="Point to from the main part, it shows all the pages a word appears on." />
+    <MESSAGE value="Task 3" />
+    <MESSAGE value="All thasks" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Task1/SearchCmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="27" selection-start="442" selection-end="450" vertical-scroll-proportion="0.5995717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Task4/Searcher_task4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="11" selection-start="673" selection-end="673" vertical-scroll-proportion="0.6827309" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Task4/Searcher_task4Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="57" selection-start="411" selection-end="411" vertical-scroll-proportion="0.15662651" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../junit-benchmarks-0.7.0/junit-benchmarks-0.7.0.jar!/com/carrotsearch/junitbenchmarks/BenchmarkStatement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="0" selection-start="4156" selection-end="4156" vertical-scroll-proportion="-14.64" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/builders/JUnit4Builder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="413" selection-end="413" vertical-scroll-proportion="0.37974682" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmark-lists-task1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="9" vertical-scroll-proportion="-2.6600986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Advanced/SearcherAdv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="20" selection-start="604" selection-end="604" vertical-scroll-proportion="-0.26058632">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Advanced/SearchCmd_Advanced.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="23" selection-start="939" selection-end="939" vertical-scroll-proportion="0.9234528">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Task1/SearcherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.28338763">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Task3/Searcher_task3Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="29" selection-start="691" selection-end="691" vertical-scroll-proportion="0.50301206">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Task2/Searcher_task2Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="28" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Task2/SearchCmd_task2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="51" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Task2/Searcher_task2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="50" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Advanced/SearcherAdvTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="37" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Task3/SearchCmd_task3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="31" selection-start="1191" selection-end="1520" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Task3/Searcher_task3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="50" selection-start="619" selection-end="619" vertical-scroll-proportion="0.036101084">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Project Cluster</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>h2-1.3.174</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

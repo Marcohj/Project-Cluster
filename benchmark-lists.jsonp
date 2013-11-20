@@ -1,0 +1,19 @@
+receiveJsonpData({
+"cols": [
+{"label": "method", "type": "string"},
+{"label": "Average time [s]", "type": "number"},
+{"label": "StdDev", "type": "number"},
+{"label": "GC time [s]", "type": "number"},
+{"label": "GC average [s]", "type": "number"},
+{"label": "StdDev", "type": "number"},
+{"label": "GC calls", "type": "number"},
+{"label": "benchmark rounds", "type": "number"},
+{"label": "warmup rounds", "type": "number"},
+{"label": "Total benchmark time", "type": "number"},
+{"label": "Total warmup time", "type": "number"}
+],
+"rows": [
+{"c": [{"v": "testReadHtmlListSmall"}, {"v": 0.0}, {"v": 0.01}, {"v": 0.0}, {"v": 0.0}, {"v": 0.0}, {"v": 0}, {"v": 10}, {"v": 5}, {"v": 0.03}, {"v": 0.15}]},
+{"c": [{"v": "testReadHtmlListMedium"}, {"v": 0.03}, {"v": 0.01}, {"v": 0.07}, {"v": 0.0}, {"v": 0.0}, {"v": 2}, {"v": 10}, {"v": 5}, {"v": 0.3}, {"v": 0.7}]},
+{"c": [{"v": "testReadHtmlListBig"}, {"v": 0.89}, {"v": 0.68}, {"v": 7.24}, {"v": 0.0}, {"v": 0.0}, {"v": 14}, {"v": 10}, {"v": 5}, {"v": 8.91}, {"v": 7.12}]}
+]});
