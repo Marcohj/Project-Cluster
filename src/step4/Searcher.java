@@ -1,4 +1,4 @@
-package Step3;
+package step4;
 
 import java.io.*;
 
@@ -6,28 +6,21 @@ class Searcher {
 
 	private static String	URLMarker	= "*PAGE";
 
-	public static boolean exists(HTMLlist l, String word) {
-		while (l != null) {
-			if (l.str.equals(word)) {
-				return true;
-			}
-			l = l.next;
+	public static boolean exists(HashTable l, String word) {
+		if (l.get(word) != null) {
+			return true;
 		}
 		return false;
 	}
 
-	public static HTMLlist getNode(HTMLlist l, String word) {
-		while (l != null) {
-			if (l.str.equals(word))
-				return l;
-			l = l.next;
-		}
-		return null;
+	public static HTMLlist getNode(HashTable l, String word) {
+		return l.get(word);
 	}
 
-	public static HTMLlist readHtmlList(String filename) throws IOException {
+	public static HashTable readHtmlList(String filename) throws IOException {
 		String name, currentUrl;
 		HTMLlist start, tmp;
+		HashTable dataTable = new HashTable();
 
 		// Open the file given as argument
 		BufferedReader infile = new BufferedReader(new FileReader(filename));
@@ -52,27 +45,14 @@ class Searcher {
 				continue;
 			}
 
-			tmp = start;
+			tmp = new HTMLlist(name, null);
+			tmp.AddUrl(currentUrl);
 
-			while (tmp != null) {
-				if (tmp.str.compareTo(name) == 0) {
-					tmp.AddUrl(currentUrl);
-					break;
-				}
-
-				// if not found (last element) add new
-				if (tmp.next == null) {
-					tmp.next = new HTMLlist(name, null);
-					tmp.next.AddUrl(currentUrl);
-					break;
-				}
-
-				tmp = tmp.next;
-			}
+			dataTable.put(tmp);
 		}
 
 		infile.close(); // Close the file
 
-		return start;
+		return dataTable;
 	}
 }

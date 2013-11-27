@@ -1,10 +1,8 @@
-package Step2;
+package step1;
 
 import java.io.*;
 
 class Searcher {
-
-	private static String	URLMarker	= "*PAGE";
 
 	public static boolean exists(HTMLlist l, String word) {
 		while (l != null) {
@@ -14,15 +12,6 @@ class Searcher {
 			l = l.next;
 		}
 		return false;
-	}
-
-	public static HTMLlist getNode(HTMLlist l) {
-		while (l != null) {
-			if (l.str.contains(URLMarker))
-				return l;
-			l = l.next;
-		}
-		return null;
 	}
 
 	public static HTMLlist readHtmlList(String filename) throws IOException {

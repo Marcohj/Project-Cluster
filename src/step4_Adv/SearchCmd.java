@@ -1,6 +1,7 @@
-package Step4;
+package step4_Adv;
 
 import java.io.*;
+import java.util.ArrayList;
 
 public class SearchCmd {
 
@@ -26,17 +27,20 @@ public class SearchCmd {
 			name = inuser.readLine(); // Read a line from the terminal
 			if (name == null || name.length() == 0) {
 				quit = true;
-			} else if (Searcher.exists(l, name)) {
-				System.out.println(name + " exists on the following pages:");
-				HTMLlist wordFound = Searcher.getNode(l, name);
-
-				while (wordFound.urls != null) {
-					System.out.println("   " + wordFound.urls.url);
-					wordFound.urls = wordFound.urls.next;
-				}
 			} else {
-				System.out.println("The word \"" + name + "\" has NOT been found.");
+				ArrayList<String> results = Searcher.exists(l, name);
+				if (results != null) {
+					System.out.println(name + " exists on the following pages:");
+					for (String result : results) {
+						if (result != null) {
+							System.out.println("   " + result);
+						}
+					}
+				} else {
+					System.out.println("The word \"" + name + "\" has NOT been found.");
+				}
 			}
+
 		}
 	}
 }

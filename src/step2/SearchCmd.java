@@ -1,4 +1,4 @@
-package Step3;
+package step2;
 
 import java.io.*;
 
@@ -27,12 +27,13 @@ public class SearchCmd {
 			if (name == null || name.length() == 0) {
 				quit = true;
 			} else if (Searcher.exists(l, name)) {
-				System.out.println(name + " exists on the following pages:");
-				HTMLlist wordFound = Searcher.getNode(l, name);
-
-				while (wordFound.urls != null) {
-					System.out.println("   " + wordFound.urls.url);
-					wordFound.urls = wordFound.urls.next;
+				System.out.println("The word \"" + name + "\" has been found on the following pages: ");
+				HTMLlist currentPage = Searcher.getNode(l);
+				while (currentPage != null) {
+					if (Searcher.exists(currentPage, name)) {
+						System.out.println("   " + currentPage.str);
+						currentPage = Searcher.getNode(currentPage.next);
+					}
 				}
 			} else {
 				System.out.println("The word \"" + name + "\" has NOT been found.");

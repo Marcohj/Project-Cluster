@@ -1,9 +1,9 @@
-package Step4_Advanced;
+package step4;
 
 class HashTable {
 	private HTMLlist[]	data;
 	private int			capacity	= 200;
-	private int			wordsAdded = 0;
+	private int			wordsAdded	= 0;
 
 	public HashTable() {
 		data = new HTMLlist[capacity];
@@ -34,7 +34,7 @@ class HashTable {
 		// make sure we dont get an empty element
 		if (element != null) {
 			biggerHashTable();
-			
+
 			// hash the key
 			int hash = hashThis(element.str);
 
@@ -84,7 +84,7 @@ class HashTable {
 			}
 		}
 	}
-	
+
 	public void biggerHashTable() {
 		if ((wordsAdded / 10) >= capacity) {
 			HTMLlist[] tempArray = data;

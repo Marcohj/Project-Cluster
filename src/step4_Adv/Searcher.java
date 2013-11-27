@@ -1,32 +1,33 @@
-package Step4_Advanced;
+package step4_Adv;
 
 import java.io.*;
+import java.util.ArrayList;
 
 class Searcher {
 
 	private static String	URLMarker	= "*PAGE";
 
-	public static String[] exists(HashTable l, String word) {
-		String[] result = new String[500];
-		int resultsAdded = 0;
+	public static ArrayList<String> exists(HashTable l, String word) {
 		
+		ArrayList<String> resultList = new ArrayList<String>();
+
 		if (word.contains("AND")) {
-			// word cotains AND... so lets make it a condition and only take URLs when they are duplicate
+			// word cotains AND... so lets make it a condition and only take
+			// URLs when they are duplicate
 			String[] res = word.split("AND");
 			String firstWord = res[0].trim();
 			String secondWord = res[1].trim();
-			
+
 			// get wordLists from HashTable
 			HTMLlist firstWordList = l.get(firstWord);
 			HTMLlist secondWordList = l.get(secondWord);
-			
+
 			// make sure the URL is both in firstWordList and secondWordList
 			while (firstWordList.urls != null) {
 				URL urlSearcher = secondWordList.urls;
 				while (urlSearcher != null) {
 					if (firstWordList.urls.url.compareTo(urlSearcher.url) == 0) {
-						result[resultsAdded] = firstWordList.urls.url;
-						resultsAdded++;
+						resultList.add(firstWordList.urls.url);
 					}
 					urlSearcher = urlSearcher.next;
 				}
@@ -42,30 +43,27 @@ class Searcher {
 			HTMLlist secondWordList = l.get(secondWord);
 
 			while (firstWordList.urls != null) {
-				result[resultsAdded] = firstWordList.urls.url;
-				resultsAdded++;
+				resultList.add(firstWordList.urls.url);
 				firstWordList.urls = firstWordList.urls.next;
 			}
 
 			while (secondWordList.urls != null) {
 				// TODO: Need to remove double URLs
-				result[resultsAdded] = secondWordList.urls.url;
-				resultsAdded++;
+				resultList.add(secondWordList.urls.url);
 				secondWordList.urls = secondWordList.urls.next;
 			}
 		} else {
-			// word contains neither AND or OR, so lets treat it as an single word
+			// word contains neither AND or OR, so lets treat it as an single
+			// word
 			HTMLlist wordList = l.get(word);
 
 			while (wordList.urls != null) {
-				result[resultsAdded] = wordList.urls.url;
-				resultsAdded++;
+				resultList.add(wordList.urls.url);
 				wordList.urls = wordList.urls.next;
 			}
 		}
 
-		return result;
-
+		return resultList;
 	}
 
 	public static HTMLlist getNode(HashTable l, String word) {

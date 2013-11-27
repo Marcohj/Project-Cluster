@@ -1,4 +1,4 @@
-package Step4_Advanced;
+package step1;
 
 import java.io.*;
 
@@ -14,7 +14,7 @@ public class SearchCmd {
 		}
 
 		// Read the file and create the linked list
-		HashTable l = Searcher.readHtmlList(args[0]);
+		HTMLlist l = Searcher.readHtmlList(args[0]);
 
 		// Ask for a word to search
 		BufferedReader inuser = new BufferedReader(new InputStreamReader(System.in));
@@ -26,20 +26,11 @@ public class SearchCmd {
 			name = inuser.readLine(); // Read a line from the terminal
 			if (name == null || name.length() == 0) {
 				quit = true;
+			} else if (Searcher.exists(l, name)) {
+				System.out.println("The word \"" + name + "\" has been found.");
 			} else {
-				String[] results = Searcher.exists(l, name);
-				if (results != null) {
-					System.out.println(name + " exists on the following pages:");
-					for (String result : results) {
-						if (result != null) {
-							System.out.println("   " + result);
-						}
-					}
-				} else {
-					System.out.println("The word \"" + name + "\" has NOT been found.");
-				}
+				System.out.println("The word \"" + name + "\" has NOT been found.");
 			}
-
 		}
 	}
 }

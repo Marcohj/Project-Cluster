@@ -1,4 +1,4 @@
-package Step4_Advanced;
+package step4;
 
 class HTMLlist {
 	String		str;
