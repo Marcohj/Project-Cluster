@@ -14,11 +14,15 @@ public class SearchCmd {
 		}
 
 		// Read the file and create the linked list
+		long begin = System.currentTimeMillis();
 		HashTable l = Searcher.readHtmlList(args[0]);
-
+		long end = System.currentTimeMillis();
+		long reuslt = end - begin;
+		System.out.println("Indexing took: " + reuslt + "ms");
+		
 		// Ask for a word to search
 		BufferedReader inuser = new BufferedReader(new InputStreamReader(System.in));
-
+		
 		System.out.println("Hit return to exit.");
 		boolean quit = false;
 		while (!quit) {

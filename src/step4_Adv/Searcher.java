@@ -82,7 +82,7 @@ class Searcher {
 		name = infile.readLine(); // Read the second line
 
 		start = new HTMLlist(name, null);
-		start.AddUrl(currentUrl);
+		start.addUrl(currentUrl);
 
 		while (name != null)// Exit if there is none
 		{
@@ -99,7 +99,7 @@ class Searcher {
 			}
 
 			tmp = new HTMLlist(name, null);
-			tmp.AddUrl(currentUrl);
+			tmp.addUrl(currentUrl);
 
 			dataTable.put(tmp);
 		}

@@ -1,95 +1,94 @@
 package step4;
 
 class HashTable {
+	// The Array used for keeping all the word in
 	private HTMLlist[]	data;
+
+	// The starting size of “data”.
 	private int			capacity	= 200;
+
+	// Counter for the number of words added.
 	private int			wordsAdded	= 0;
 
+	// The number of words we would like in each slot in “data”.
+	private int			wordsInSlot	= 2;
+
+	// Creates a new object with the “data” array being the size of “capacity”.
 	public HashTable() {
 		data = new HTMLlist[capacity];
 	}
 
+	// Hashcode function
 	public int hashThis(String key) {
 		return Math.abs(key.hashCode()) % capacity;
 	}
 
-	public HTMLlist get(String key) {
-		// hash the key
-		int hash = hashThis(key);
-		// find the array with the key
+	public HTMLlist get(String word) {
+		// hash the given word
+		int hash = hashThis(word);
+		// find the array slot with the key
 		HTMLlist HTMLlistInArray = data[hash];
 		// go through the chained list until we find the word
 		while (HTMLlistInArray != null) {
-			if (HTMLlistInArray.str.equals(key)) {
+			if (HTMLlistInArray.str.equals(word)) {
 				return HTMLlistInArray;
 			} else {
 				HTMLlistInArray = HTMLlistInArray.next;
 			}
 		}
-		// if no word found, return null
+		// if no word was found, return null
 		return null;
 	}
 
 	public void put(HTMLlist element) {
-		// make sure we dont get an empty element
-		if (element != null) {
-			biggerHashTable();
-
-			// hash the key
-			int hash = hashThis(element.str);
-
-			// find the array with the key
-			HTMLlist HTMLlistInArray = data[hash];
-
-			// if no word is found, we can safely add it as the first
-			if (HTMLlistInArray == null) {
-				data[hash] = element;
-				wordsAdded++;
-				return;
-			}
-
-			// else we go to the end, or until we find the same word
-			while (HTMLlistInArray != null) {
-				if (HTMLlistInArray.str.equals(element.str)) {
-					// first url, so add it and break
-					if (HTMLlistInArray.urls == null) {
-						HTMLlistInArray.urls = element.urls;
-						break;
-					}
-
-					// else we need to add it to the chained list
-					URL current = HTMLlistInArray.urls;
-					while (current != null) {
-						// check if not added already
-						if (current.url.compareTo(element.urls.url) == 0)
-							break;
-
-						// not found while traversing
-						if (current.next == null) {
-							current.next = element.urls;
-							current = element.urls;
-						}
-						current = current.next;
-					}
-				}
-
-				if (HTMLlistInArray.next == null) {
-					HTMLlistInArray.next = element;
-					HTMLlistInArray = element;
-					wordsAdded++;
-					break;
-				}
-
-				HTMLlistInArray = HTMLlistInArray.next;
-			}
+		// make sure we don't get an empty element
+		if (element == null) {
+			return;
 		}
+		
+		// make sure our array is big enough
+		biggerHashTable();
+
+		// hash the key
+		int hash = hashThis(element.str);
+
+		// find the array slot with the key
+		HTMLlist HTMLlistInArray = data[hash];
+
+		// if no word is found, we can safely add it as the first
+		if (HTMLlistInArray == null) {
+			data[hash] = element;
+			wordsAdded++;
+			return;
+		}
+
+		// else we go to the end, or until we find the same word
+		while (HTMLlistInArray != null) {
+			if (HTMLlistInArray.str.equals(element.str)) {
+				HTMLlistInArray.addUrl(element.urls.url);
+				break;
+			}
+			
+			// If it is the last word, we now know it wasn't in the list, so lets add it and break
+			if (HTMLlistInArray.next == null) {
+				HTMLlistInArray.next = element;
+				HTMLlistInArray = element;
+				wordsAdded++;
+				break;
+			}
+			
+			// go to next linked word in while loop
+			HTMLlistInArray = HTMLlistInArray.next;
+		}
+
 	}
 
 	public void biggerHashTable() {
-		if ((wordsAdded / 10) >= capacity) {
+		if ((wordsAdded / wordsInSlot) >= capacity) {
 			HTMLlist[] tempArray = data;
 			// Double size plus one
 			capacity = (capacity * 2) + 1;
+			wordsInSlot = wordsInSlot * 2;
 			data = new HTMLlist[capacity];
 			for (int i = 0; i < tempArray.length; i++) {
 				data[i] = tempArray[i];

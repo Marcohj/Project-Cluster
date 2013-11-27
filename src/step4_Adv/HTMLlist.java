@@ -10,7 +10,7 @@ class HTMLlist {
 		next = n;
 	}
 
-	public URL AddUrl(String url) {
+	public URL addUrl(String url) {
 		if (urls == null) {
 			urls = new URL(url, null);
 			return urls;

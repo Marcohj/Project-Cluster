@@ -36,11 +36,11 @@ class Searcher {
 		name = infile.readLine(); // Read the second line
 
 		start = new HTMLlist(name, null);
-		start.AddUrl(currentUrl);
+		start.addUrl(currentUrl);
 
 		while (name != null)// Exit if there is none
 		{
-
+			System.out.println("running?");
 			// get next line
 			name = infile.readLine();
 			if (name == null)
@@ -56,14 +56,14 @@ class Searcher {
 
 			while (tmp != null) {
 				if (tmp.str.compareTo(name) == 0) {
-					tmp.AddUrl(currentUrl);
+					tmp.addUrl(currentUrl);
 					break;
 				}
 
 				// if not found (last element) add new
 				if (tmp.next == null) {
 					tmp.next = new HTMLlist(name, null);
-					tmp.next.AddUrl(currentUrl);
+					tmp.next.addUrl(currentUrl);
 					break;
 				}
 
