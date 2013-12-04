@@ -11,7 +11,7 @@ class HashTable {
 	private int			wordsAdded	= 0;
 
 	// The number of words we would like in each slot in “data”.
-	private int			wordsInSlot	= 2;
+	private int			wordsInSlot	= 50;
 
 	// Creates a new object with the “data” array being the size of “capacity”.
 	public HashTable() {
@@ -86,12 +86,13 @@ class HashTable {
 	public void biggerHashTable() {
 		if ((wordsAdded / wordsInSlot) >= capacity) {
 			HTMLlist[] tempArray = data;
+			int newIndex = 0;
 			// Double size plus one
 			capacity = (capacity * 2) + 1;
-			wordsInSlot = wordsInSlot * 2;
 			data = new HTMLlist[capacity];
 			for (int i = 0; i < tempArray.length; i++) {
-				data[i] = tempArray[i];
+				newIndex = hashThis(tempArray[i].str);
+				data[newIndex] = tempArray[i];
 			}
 		}
 	}
