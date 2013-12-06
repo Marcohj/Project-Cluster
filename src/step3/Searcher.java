@@ -40,7 +40,6 @@ class Searcher {
 
 		while (name != null)// Exit if there is none
 		{
-			System.out.println("running?");
 			// get next line
 			name = infile.readLine();
 			if (name == null)

@@ -5,7 +5,7 @@ class HashTable {
 	private HTMLlist[]	data;
 
 	// The starting size of “data”.
-	private int			capacity	= 200;
+	private int			capacity	= 201;
 
 	// Counter for the number of words added.
 	private int			wordsAdded	= 0;
@@ -48,10 +48,11 @@ class HashTable {
 		
 		// make sure our array is big enough
 		biggerHashTable();
+		element.next = null;
 
 		// hash the key
 		int hash = hashThis(element.str);
-
+		
 		// find the array slot with the key
 		HTMLlist HTMLlistInArray = data[hash];
 
@@ -85,15 +86,23 @@ class HashTable {
 
 	public void biggerHashTable() {
 		if ((wordsAdded / wordsInSlot) >= capacity) {
+			// Cop7 data to tempArray
 			HTMLlist[] tempArray = data;
-			int newIndex = 0;
+			// Create temp HTMLlist
+			HTMLlist temp = null;
 			// Double size plus one
 			capacity = (capacity * 2) + 1;
+			// New data size set
 			data = new HTMLlist[capacity];
 			for (int i = 0; i < tempArray.length; i++) {
-				newIndex = hashThis(tempArray[i].str);
-				data[newIndex] = tempArray[i];
+				while(tempArray[i] != null) {
+					temp = new HTMLlist(tempArray[i].str, null);
+					temp.urls = tempArray[i].urls;
+					this.put(temp);
+					tempArray[i] = tempArray[i].next;
+				}
 			}
+			tempArray = null;
 		}
 	}
 }

@@ -86,7 +86,6 @@ class Searcher {
 
 		while (name != null)// Exit if there is none
 		{
-
 			// get next line
 			name = infile.readLine();
 			if (name == null)
