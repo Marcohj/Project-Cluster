@@ -60,6 +60,7 @@ class HashTable {
 		if (HTMLlistInArray == null) {
 			data[hash] = element;
 			wordsAdded++;
+			System.out.println("Word printed: " + wordsAdded);
 			return;
 		}
 
@@ -75,6 +76,7 @@ class HashTable {
 				HTMLlistInArray.next = element;
 				HTMLlistInArray = element;
 				wordsAdded++;
+				System.out.println("Word printed: " + wordsAdded);
 				break;
 			}
 			
@@ -90,6 +92,8 @@ class HashTable {
 			HTMLlist[] tempArray = data;
 			// Create temp HTMLlist
 			HTMLlist temp = null;
+			// Reset counter
+			wordsAdded = 0;
 			// Double size plus one
 			capacity = (capacity * 2) + 1;
 			// New data size set

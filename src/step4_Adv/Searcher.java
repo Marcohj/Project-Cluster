@@ -8,13 +8,22 @@ class Searcher {
 	private static String	URLMarker	= "*PAGE";
 
 	public static ArrayList<String> exists(HashTable l, String word) {
-		
+
 		ArrayList<String> resultList = new ArrayList<String>();
 
 		if (word.contains("AND")) {
 			// word cotains AND... so lets make it a condition and only take
 			// URLs when they are duplicate
 			String[] res = word.split("AND");
+			if (res.length < 1) {
+				return resultList;
+			} else if (res.length < 2) {
+				return exists(l, res[0].trim());
+			} else if (res[0].isEmpty()) {
+				return exists(l, res[1].trim());
+			} else if (res[1].isEmpty()) {
+				return exists(l, res[0].trim());
+			}
 			String firstWord = res[0].trim();
 			String secondWord = res[1].trim();
 
@@ -23,43 +32,61 @@ class Searcher {
 			HTMLlist secondWordList = l.get(secondWord);
 
 			// make sure the URL is both in firstWordList and secondWordList
-			while (firstWordList.urls != null) {
-				URL urlSearcher = secondWordList.urls;
-				while (urlSearcher != null) {
-					if (firstWordList.urls.url.compareTo(urlSearcher.url) == 0) {
-						resultList.add(firstWordList.urls.url);
+			if (firstWordList != null && secondWordList != null) {
+				while (firstWordList.urls != null) {
+					URL urlSearcher = secondWordList.urls;
+					while (urlSearcher != null) {
+						if (firstWordList.urls.url.compareTo(urlSearcher.url) == 0) {
+							resultList.add(firstWordList.urls.url);
+						}
+						urlSearcher = urlSearcher.next;
 					}
-					urlSearcher = urlSearcher.next;
+					firstWordList.urls = firstWordList.urls.next;
 				}
-				firstWordList.urls = firstWordList.urls.next;
 			}
 		} else if (word.contains("OR")) {
 			// word contains OR, so lets take URLs from both results
 			String[] res = word.split("OR");
+			if (res.length < 1) {
+				return resultList;
+			} else if (res.length < 2) {
+				return exists(l, res[0].trim());
+			} else if (res[0].isEmpty()) {
+				return exists(l, res[1].trim());
+			} else if (res[1].isEmpty()) {
+				return exists(l, res[0].trim());
+			}
 			String firstWord = res[0].trim();
 			String secondWord = res[1].trim();
 
 			HTMLlist firstWordList = l.get(firstWord);
 			HTMLlist secondWordList = l.get(secondWord);
-
-			while (firstWordList.urls != null) {
-				resultList.add(firstWordList.urls.url);
-				firstWordList.urls = firstWordList.urls.next;
+			
+			if(firstWordList != null) {
+				while (firstWordList.urls != null) {
+					resultList.add(firstWordList.urls.url);
+					firstWordList.urls = firstWordList.urls.next;
+				}
 			}
-
-			while (secondWordList.urls != null) {
-				// TODO: Need to remove double URLs
-				resultList.add(secondWordList.urls.url);
-				secondWordList.urls = secondWordList.urls.next;
+			
+			if(secondWordList != null) {
+				while (secondWordList.urls != null) {
+					// TODO: Need to remove double URLs
+					resultList.add(secondWordList.urls.url);
+					secondWordList.urls = secondWordList.urls.next;
+				}
 			}
 		} else {
 			// word contains neither AND or OR, so lets treat it as an single
 			// word
-			HTMLlist wordList = l.get(word);
+			word = word.trim();
 
-			while (wordList.urls != null) {
-				resultList.add(wordList.urls.url);
-				wordList.urls = wordList.urls.next;
+			HTMLlist wordList = l.get(word);
+			if (wordList != null) {
+				while (wordList.urls != null) {
+					resultList.add(wordList.urls.url);
+					wordList.urls = wordList.urls.next;
+				}
 			}
 		}
 

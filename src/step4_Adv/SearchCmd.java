@@ -29,7 +29,7 @@ public class SearchCmd {
 				quit = true;
 			} else {
 				ArrayList<String> results = Searcher.exists(l, name);
-				if (results != null) {
+				if (!results.isEmpty()) {
 					System.out.println(name + " exists on the following pages:");
 					for (String result : results) {
 						if (result != null) {
