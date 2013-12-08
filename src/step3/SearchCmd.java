@@ -29,10 +29,13 @@ public class SearchCmd {
 			} else if (Searcher.exists(l, name)) {
 				System.out.println(name + " exists on the following pages:");
 				HTMLlist wordFound = Searcher.getNode(l, name);
-
-				while (wordFound.urls != null) {
-					System.out.println("   " + wordFound.urls.url);
-					wordFound.urls = wordFound.urls.next;
+				
+				if (wordFound != null) {
+					URL urlSearcher = wordFound.urls;
+					while (urlSearcher != null) {
+						System.out.println("   " + urlSearcher.url);
+						urlSearcher = urlSearcher.next;
+					}
 				}
 			} else {
 				System.out.println("The word \"" + name + "\" has NOT been found.");

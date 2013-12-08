@@ -10,7 +10,8 @@ class Searcher {
 	public static ArrayList<String> exists(HashTable l, String word) {
 
 		ArrayList<String> resultList = new ArrayList<String>();
-
+		URL wordURLS;
+		
 		if (word.contains("AND")) {
 			// word cotains AND... so lets make it a condition and only take
 			// URLs when they are duplicate
@@ -34,14 +35,15 @@ class Searcher {
 			// make sure the URL is both in firstWordList and secondWordList
 			if (firstWordList != null && secondWordList != null) {
 				while (firstWordList.urls != null) {
+					wordURLS = firstWordList.urls;
 					URL urlSearcher = secondWordList.urls;
 					while (urlSearcher != null) {
-						if (firstWordList.urls.url.compareTo(urlSearcher.url) == 0) {
-							resultList.add(firstWordList.urls.url);
+						if (wordURLS.url.compareTo(urlSearcher.url) == 0) {
+							resultList.add(wordURLS.url);
 						}
 						urlSearcher = urlSearcher.next;
 					}
-					firstWordList.urls = firstWordList.urls.next;
+					wordURLS = wordURLS.next;
 				}
 			}
 		} else if (word.contains("OR")) {
@@ -63,29 +65,32 @@ class Searcher {
 			HTMLlist secondWordList = l.get(secondWord);
 			
 			if(firstWordList != null) {
-				while (firstWordList.urls != null) {
-					resultList.add(firstWordList.urls.url);
-					firstWordList.urls = firstWordList.urls.next;
+				wordURLS = firstWordList.urls;
+				while (wordURLS != null) {
+					// TODO: Need to remove double URLs
+					resultList.add(wordURLS.url);
+					wordURLS = wordURLS.next;
 				}
 			}
 			
 			if(secondWordList != null) {
-				while (secondWordList.urls != null) {
+				wordURLS = secondWordList.urls;
+				while (wordURLS != null) {
 					// TODO: Need to remove double URLs
-					resultList.add(secondWordList.urls.url);
-					secondWordList.urls = secondWordList.urls.next;
+					resultList.add(wordURLS.url);
+					wordURLS = wordURLS.next;
 				}
 			}
 		} else {
 			// word contains neither AND or OR, so lets treat it as an single
 			// word
 			word = word.trim();
-
 			HTMLlist wordList = l.get(word);
 			if (wordList != null) {
-				while (wordList.urls != null) {
-					resultList.add(wordList.urls.url);
-					wordList.urls = wordList.urls.next;
+				wordURLS = wordList.urls;
+				while (wordURLS != null) {
+					resultList.add(wordURLS.url);
+					wordURLS = wordURLS.next;
 				}
 			}
 		}
