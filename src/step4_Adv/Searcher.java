@@ -14,7 +14,7 @@ class Searcher {
 		
 		if (word.contains("AND")) {
 			// word cotains AND... so lets make it a condition and only take
-			// URLs when they are duplicate
+			// URLs when they are in both objects
 			String[] res = word.split("AND");
 			if (res.length < 1) {
 				return resultList;
@@ -22,8 +22,6 @@ class Searcher {
 				return exists(l, res[0].trim());
 			} else if (res[0].isEmpty()) {
 				return exists(l, res[1].trim());
-			} else if (res[1].isEmpty()) {
-				return exists(l, res[0].trim());
 			}
 			String firstWord = res[0].trim();
 			String secondWord = res[1].trim();
@@ -33,18 +31,16 @@ class Searcher {
 			HTMLlist secondWordList = l.get(secondWord);
 
 			// make sure the URL is both in firstWordList and secondWordList
-			if (firstWordList != null && secondWordList != null) {
-				while (firstWordList.urls != null) {
-					wordURLS = firstWordList.urls;
-					URL urlSearcher = secondWordList.urls;
-					while (urlSearcher != null) {
-						if (wordURLS.url.compareTo(urlSearcher.url) == 0) {
-							resultList.add(wordURLS.url);
-						}
-						urlSearcher = urlSearcher.next;
+			while (firstWordList != null && secondWordList != null && firstWordList.urls != null) {
+				wordURLS = firstWordList.urls;
+				URL urlSearcher = secondWordList.urls;
+				while (urlSearcher != null) {
+					if (wordURLS.url.compareTo(urlSearcher.url) == 0) {
+						resultList.add(wordURLS.url);
 					}
-					wordURLS = wordURLS.next;
+					urlSearcher = urlSearcher.next;
 				}
+				wordURLS = wordURLS.next;
 			}
 		} else if (word.contains("OR")) {
 			// word contains OR, so lets take URLs from both results
@@ -55,8 +51,6 @@ class Searcher {
 				return exists(l, res[0].trim());
 			} else if (res[0].isEmpty()) {
 				return exists(l, res[1].trim());
-			} else if (res[1].isEmpty()) {
-				return exists(l, res[0].trim());
 			}
 			String firstWord = res[0].trim();
 			String secondWord = res[1].trim();
