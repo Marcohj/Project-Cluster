@@ -5,7 +5,7 @@ class HashTable {
 	private HTMLlist[]	data;
 
 	// The starting size of “data”.
-	private int			capacity	= 201;
+	private int			capacity	= 200;
 
 	// Counter for the number of words added.
 	private int			wordsAdded	= 0;
@@ -91,7 +91,7 @@ class HashTable {
 			// Create temp HTMLlist
 			HTMLlist temp = null;
 			// Double size plus one
-			capacity = (capacity * 2) + 1;
+			capacity = (capacity * 2);
 			// New data size set
 			data = new HTMLlist[capacity];
 			for (int i = 0; i < tempArray.length; i++) {
