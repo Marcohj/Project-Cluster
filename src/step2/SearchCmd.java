@@ -29,12 +29,12 @@ public class SearchCmd {
 			} else if (Searcher.exists(l, name)) {
 				System.out.println("The word \"" + name + "\" has been found on the following pages: ");
 				HTMLlist currentPage = Searcher.getNode(l);
-				while (currentPage != null) {
-					if (Searcher.exists(currentPage, name)) {
-						System.out.println("   " + currentPage.str);
-						currentPage = Searcher.getNode(currentPage.next);
-					}
-				}
+				while(currentPage != null){
+		                	if(Searcher.existsOnPage(currentPage,name)){
+		                  	System.out.println(" " + currentPage.str);
+		                }
+		               		currentPage = Searcher.getNode(currentPage.next);
+		            	}
 			} else {
 				System.out.println("The word \"" + name + "\" has NOT been found.");
 			}
