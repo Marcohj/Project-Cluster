@@ -1,19 +1,19 @@
-package step4_Adv;
+package stepAdv;
 
 class HashTable {
 	// The Array used for keeping all the word in
 	private HTMLlist[]	data;
 
-	// The starting size of “data”.
+	// The starting size of ???data???.
 	private int			capacity	= 200;
 
 	// Counter for the number of words added.
 	private int			wordsAdded	= 0;
 
-	// The number of words we would like in each slot in “data”.
+	// The number of words we would like in each slot in ???data???.
 	private int			wordsInSlot	= 50;
 
-	// Creates a new object with the “data” array being the size of “capacity”.
+	// Creates a new object with the ???data??? array being the size of ???capacity???.
 	public HashTable() {
 		data = new HTMLlist[capacity];
 	}

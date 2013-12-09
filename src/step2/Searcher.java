@@ -46,17 +46,17 @@ class Searcher {
 
 		return start;
 	}
-	
-	public static boolean existsOnPage (HTMLlist l, String word) {
-		while ( l!= null) {
-	        	if (l.str.equals(word)) {
-	        		return true;
-	        	}
-	        	if(l.next != null && l.next.str.startsWith(URLMarker)){
-	            		return false;
-	        	}
-	        	l = l.next;
-	      	}
+
+	public static boolean existsOnPage(HTMLlist l, String word) {
+		while (l != null) {
+			if (l.str.equals(word)) {
+				return true;
+			}
+			if (l.next != null && l.next.str.startsWith(URLMarker)) {
+				return false;
+			}
+			l = l.next;
+		}
 		return false;
 	}
 }
